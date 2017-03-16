@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="employeeID" class="techno.Employee">
+			<property name="empname" value="TANVEEER"/>
+			<property name="empid" value="1"/>
+			<property name="company" ref="companyID"/>
+			 <property name="techKnown">
+			<list>
+			<value>Servlet-Jsp</value>
+			<value>Struts</value>
+			<value>Hibernate</value>
+			<value>Spring</value>
+			</list>
+			</property>
+			
+			<property name="salary">
+			<set>
+			<value type="java.lang.Integer">40000</value>
+			<value type="java.lang.Integer">50000</value>
+			<value type="java.lang.Integer">60000</value>
+			</set>
+			</property> 
+			</bean>
+			<bean id="companyID" class="techno.Company">
+			<property name="companyname" value="INFOSYS"/>
+			<property name="companyaddress" value="Banglore, India"/>
+			
+			</bean>
+			</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="employeeID" class="techno.Employee" autowire="byType">
+			<property name="empid" value="111"/>
+			<property name="empname" value="TANVEER KEUSHNARAO BOBADE"/>
+			</bean>
+			
+			<bean id="address" class="techno.Address">
+			<property name="areaname" value="MAHALAXMI NAGAR"/>
+			<property name="cityname" value="AMRAVATI,MAHARASHTRA,INDIA"/>
+			</bean>
+			</beans>

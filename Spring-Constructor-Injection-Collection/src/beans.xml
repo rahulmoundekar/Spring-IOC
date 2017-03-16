@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="employeeID" class="techno.Employee">
+		<constructor-arg>
+			<list>
+				<value>Mahalaxmi Nagar</value>
+				<value>Karve Nagar</value>
+			</list>
+		</constructor-arg>
+
+		<constructor-arg>
+			<set>
+				<value>Amravati</value>
+				<value>Karve Nagar</value>
+			</set>
+
+
+		</constructor-arg>
+
+
+		<constructor-arg>
+			<map>
+				<entry key="India" value="Pune"></entry>
+			</map>
+		</constructor-arg>
+
+	</bean>
+
+</beans>

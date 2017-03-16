@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="employeeID" class="techno.Employee" autowire="constructor">
+			<property name="empid" value="111"/>
+			<property name="empname" value="TANVEER KRUSHNARAO BOBADE"/>
+			</bean>
+			<!-- to create a constructor Autowiring (we need to keep Constructor Injection in dependent class)we need to keep class name and id name same to get data otherwise it will send Null exception  -->
+			<bean id="address" class="techno.Address">
+			<property name="areaname" value="MAHALAXMI NAGAR"/>
+			<property name="cityname" value="AMRAVATI,MAHARASHTRA,INDIA"/>
+			
+			</bean>
+			</beans>

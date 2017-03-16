@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="empid" class="com.Employee">
+	<constructor-arg value="BOBADE"></constructor-arg>
+	<constructor-arg ref="addid"></constructor-arg>
+		<property name="empname" value="TANVEER" />
+		<property name="address" ref="addid" />
+	</bean>
+
+	<bean id="addid" class="com.Address">
+	<constructor-arg value="AMRAVATI"></constructor-arg>
+		<property name="cityname" value="PUNE" />
+	</bean>
+</beans>
